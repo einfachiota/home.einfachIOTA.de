@@ -1,5 +1,6 @@
 <template>
   <div class="login-container">
+  <vue-particles class="particles"></vue-particles>
     <el-form
       ref="loginForm"
       :model="loginForm"
@@ -15,7 +16,6 @@
       <div class="title-container">
         <h3 class="title">HQ Login</h3>
       </div>
-      <p>Betrete das Haupqartier</p>
 
       <el-form-item prop="username">
         <span class="svg-container">
@@ -59,10 +59,6 @@
         @click.native.prevent="handleLogin"
       >Login</el-button>
 
-      <div class="tips">
-        <span style="margin-right:20px;">username: admin</span>
-        <span>password: any</span>
-      </div>
     </el-form>
   </div>
 </template>
@@ -89,8 +85,8 @@ export default {
     };
     return {
       loginForm: {
-        username: "admin",
-        password: "111111"
+        username: "",
+        password: ""
       },
       loginRules: {
         username: [
@@ -264,6 +260,12 @@ $light_gray: #eee;
     max-height: 200px;
     min-width: 100px;
     margin: 0 auto;
+  }
+  .particles {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 </style>
