@@ -14,7 +14,7 @@
       </div>
 
       <div class="title-container">
-        <h3 class="title">HQ Login</h3>
+        <h3 class="title">Home Login</h3>
       </div>
 
       <el-form-item prop="username">
