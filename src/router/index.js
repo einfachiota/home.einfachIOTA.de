@@ -70,7 +70,21 @@ export const constantRoutes = [
       }
     ]
   },
-
+  {
+    path: '/affiliate',
+    component: Layout,
+    redirect: '/affiliate/reflinks',
+    name: 'Affiliate',
+    meta: { title: 'Affiliate', icon: 'form' },
+    children: [
+      {
+        path: 'reflinks',
+        name: 'Reflinks',
+        component: () => import('@/views/table/index'),
+        meta: { title: 'Reflinks', icon: 'table' }
+      }
+    ]
+  },
   {
     path: 'einfachIOTA',
     component: Layout,
