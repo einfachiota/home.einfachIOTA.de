@@ -78,7 +78,7 @@ export const constantRoutes = [
       {
         path: 'invoices',
         name: 'Invoices',
-        component: () => import('@/views/table/index'),
+        component: () => import('@/views/invoices/index'),
         meta: { title: 'Invoices', icon: 'table' }
       }
     ]
