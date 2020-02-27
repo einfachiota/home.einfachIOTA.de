@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'Vue Admin Template',
+  title: 'einfachIOTA - Home',
 
   /**
    * @type {boolean} true | false
