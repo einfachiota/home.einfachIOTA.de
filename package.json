@@ -16,7 +16,7 @@
     "deploy": "npm run build:prod && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "axios": "0.18.1",
+    "axios": "1.6.0",
     "element-ui": "2.13.0",
     "js-cookie": "2.2.0",
     "link-prevue": "^1.1.3",
